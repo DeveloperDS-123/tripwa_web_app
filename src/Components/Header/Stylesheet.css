@@ -203,7 +203,7 @@ img.Action_arrow {
     font-weight: 400;
     font-size: 22px;
 }
-ul {
+.Footer ul {
     list-style: none;
     padding: 0px;
     padding-left: 50px;
@@ -373,6 +373,56 @@ p.order, .main_name, p.location-txt, p.location-icon, p.stay-txt {
         display: none;
     }
 
+
+/* Tour Guide */
+
+.bg-image-div {
+    background-image: url(/src/Images/Tour-guide.jpg);
+    height: 300px;
+    background-size: cover;
+    text-align: center;
+    font-family: poppins;
+    color: white;
+}
+.bg-image-div .container {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.bg-image-div  h1 {
+    font-size: 40px;
+    margin: 0px;   
+}
+.bg-image-div .row {
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.tour-steps .ticket-text, .tour-steps .Hotel-text, .tour-steps .Car-text {
+    width: 50%;
+}
+.tour-steps  h1 {
+    padding-left: 20px;
+}
+.tour-steps .ticket-image, .tour-steps .Hotel-image, .tour-steps .Car-image {
+    width: 50%;
+}
+.tour-steps .ticket-image img, .tour-steps .Hotel-image img, .tour-steps .Car-image img {
+    width: 100%;
+}
+.tour-steps ul {
+    list-style: square;
+}
+
+
+
+
+
+
 /* Media Query */
 
 /* Tablet */
@@ -482,6 +532,13 @@ p.order, .main_name, p.location-txt, p.location-icon, p.stay-txt {
         padding-left: 20px;
     }
 
+
+    /* Tour Guide */
+
+    .row {
+        padding-left: 20px;
+    }
+    
 }
 
 
@@ -505,6 +562,7 @@ p.order, .main_name, p.location-txt, p.location-icon, p.stay-txt {
         display: flex;
         align-items: flex-start;
         width: 80%;
+        height: auto;
         text-align: left;
     }
     .react-datepicker__view-calendar-icon input {
@@ -653,5 +711,36 @@ p.order, .main_name, p.location-txt, p.location-icon, p.stay-txt {
         font-size: 12px;
     }
     
- 
+
+    /* Tour Guide */
+
+    .row {
+        padding-left: 20px;
+    }
+    .tour-steps .ticket-text, .tour-steps .Hotel-text, .tour-steps .Car-text {
+        width: 100%;
+    }
+    .tour-steps .ticket-image, .tour-steps .Hotel-image, .tour-steps .Car-image {
+        width: 100%;
+    }
+    .hotel-booking .row {
+        flex-direction: column-reverse;
+    }
+    .tour-steps ul {
+        padding-left: 20px;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .tour-steps  h1 {
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 20px;
+    }
+    .bg-image-div  h1 {
+        font-size: 30px;
+    }
+    .tour-guide p {
+        font-size: 12px;
+    }
+    
 }

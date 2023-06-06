@@ -5,9 +5,10 @@ import Send from '../../Images/Send-arrow.svg'
 import Phone from '../../Images/Phone.svg'
 import Email from '../../Images/Email.svg'
 import Location from '../../Images/Office.svg'
-import { Form } from 'react-router-dom';
+import { Form, useNavigate } from 'react-router-dom';
 
 const Footer = () => {  
+  const navigate=useNavigate()
   return(
     <div className="Footer">
       <div className="container">
@@ -39,10 +40,13 @@ const Footer = () => {
             <div className='f_block1'>
             <h2 className='list-heading'>Page</h2>
             <ul>
-             <li><a href="#">About</a></li>
-             <li><a href="#">Blog</a></li>
-             <li><a href="#">Contact</a></li>
-             <li><a href="#">Privacy</a></li>
+            <li onClick={()=>{navigate("/")}}>Home</li>
+             <li onClick={()=>{navigate("/about")}}>About</li>
+             <li onClick={()=>{navigate("/eror")}}>Blog</li>
+             <li onClick={()=>{navigate("/tour")}}>Tour Guide</li>
+             <li onClick={()=>{navigate("/eror")}}>Contact</li>
+             <li onClick={()=>{navigate("/eror")}}>Privacy</li>
+             
             </ul>
             </div>
             <div className='f_block2'>

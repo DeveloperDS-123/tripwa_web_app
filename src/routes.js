@@ -1,24 +1,28 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Home from "./Components/Home";
-import Flights from "./pages/Flights";
-import HeaderNavBar from "./Components/Header/HeaderNavBar";
-import Stays from "./pages/Stays";
-import Cars from "./pages/Cars";
+import About from "./Components/About";
+import Footer from "./Components/Footer";
+import Eror from "./Components/Eror";
+import Tour from "./Components/Tour";
+
 
 const AppRoutes = () => {
-  return (
-    <BrowserRouter>
-      <HeaderNavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<Flights />} />
-        <Route path="/things-to-do" element={<Stays />} />
-        <Route path="/visit" element={<Flights />} />
-        <Route path="/plan-my-trip" element={<Flights />} />
-        <Route path="/package-details" element={<Flights />} />
-      </Routes>
-    </BrowserRouter>
-  );
+
+  // const navigate = useNavigate()
+
+  return <BrowserRouter>
+
+
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="about" element={<About/>}/>
+      <Route path="/eror" element={<Eror/>}/>
+      <Route path="/eror" element={<Eror/>}/>
+      <Route path="/tour" element={<Tour/>}/>
+    </Routes>
+      <Footer/>
+
+  </BrowserRouter>;
 };
 
 export default AppRoutes;
