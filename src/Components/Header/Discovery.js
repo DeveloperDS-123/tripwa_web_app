@@ -9,12 +9,12 @@ const Discovery = () => {
     <div className="container">
     <div className='row section_header'>
       <div className='section_title'>
-        <h2 className='section_title'>Suggestions for discovery</h2>
+        <h2 className='section_title'>Events and Festivals</h2>
         <p className='section_dis'>Popular places to recommends for you</p>
       </div>
-      <div className='section_target'>
+      {/* <div className='section_target'>
        <p>Explore More +</p>
-      </div>
+      </div> */}
     </div>
     <div className="row">
 

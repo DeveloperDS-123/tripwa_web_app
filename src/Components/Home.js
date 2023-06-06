@@ -14,12 +14,12 @@ function Home() {
   const navItems = [
     {
       id: 1,
-      name: "Flights",
-      onclick: () => navigate("/flights"),
+      name: "Home",
+      onclick: () => navigate("/home"),
     },
-    { id: 2, name: "Stays", onclick: () => navigate("/stays") },
-    { id: 3, name: "Cars", onclick: () => navigate("/cars") },
-    { id: 4, name: "Visit", onclick: () => navigate("/visit") },
+    { id: 2, name: "About Us", onclick: () => navigate("/About_Us") },
+    { id: 3, name: "Things to Do", onclick: () => navigate("/Things to Dos") },
+    { id: 4, name: "Places to Visit", onclick: () => navigate("/visit") },
     {
       id: 5,
       name: "Plan my Trip",
@@ -34,12 +34,12 @@ function Home() {
   return (
     <div>
       <Header backgroundImage={""} navigationData={navItems} />
-      <Background/>
-      <Service />
+      <Service />        
+      <Background/>      
       <Discovery />
-      <Guests />
+      {/* <Guests /> */}
       <Explore />
-      <Skiplagged />
+      {/* <Skiplagged /> */}
  
     </div>
   );

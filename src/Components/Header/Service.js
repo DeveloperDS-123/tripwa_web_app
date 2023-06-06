@@ -10,12 +10,14 @@ import Insurance from "../../Images/travel-insurance.png"
 
 const Service = () => {
   return (
+    
     <div
       className="Service_block"
     >
+    
     <div className="container">
     
-     <div className="row">
+     <div className="row" >
      <div className="book-flight service_card">
       <img src={Plane} alt="Image" />
       <b><p>Book a flight</p></b>
