@@ -1,4 +1,4 @@
-const Eror = () => {
+const Error = () => {
   return(
     <div>
       <p style={{textAlign:'center'}}>WoRk In PrOgReSs</p>
@@ -6,4 +6,4 @@ const Eror = () => {
   );
 }
 
-export default Eror;
+export default Error;
