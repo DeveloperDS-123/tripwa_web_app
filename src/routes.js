@@ -15,23 +15,28 @@ import { useEffect } from "react";
 const AppRoutes = () => {
   const location = useLocation();
   console.log(location.pathname);
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   return (
     <>
-      <HeaderNavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/error" element={<Error />} />
-        <Route path="/things-to-do" element={<ThingsToDo />} />
-        <Route path="/places-to-visit" element={<PlaceToVisit />} />
-        <Route path="/plan-my-trip" element={<PlanMyTrip />} />
-        <Route path="/package-details" element={<PackageDetails />} />
-        <Route path="/tour-guide" element={<TourGuide />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
-      <Footer />
+
+      {location.pathname !== "/login" && (
+        <>
+          <HeaderNavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about-us" element={<AboutUs />} />
+            <Route path="/error" element={<Error />} />
+            <Route path="/things-to-do" element={<ThingsToDo />} />
+            <Route path="/places-to-visit" element={<PlaceToVisit />} />
+            <Route path="/plan-my-trip" element={<PlanMyTrip />} />
+            <Route path="/package-details" element={<PackageDetails />} />
+            <Route path="/tour-guide" element={<TourGuide />} />
+          </Routes>
+          <Footer />
+        </>
+      )}
     </>
   );
 };
