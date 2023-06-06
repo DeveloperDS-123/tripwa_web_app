@@ -5,6 +5,8 @@ import Plane from "../../Images/plane 1.png";
 import Car from "../../Images/car.png";
 import Hotel from "../../Images/hotel.png";
 import Guide from "../../Images/guide.png";
+import Passport from "../../Images/passport.png"
+import Insurance from "../../Images/travel-insurance.png"
 
 const Service = () => {
   return (
@@ -28,13 +30,25 @@ const Service = () => {
 
       <div className="book-hotel service_card">
       <img src={Hotel} alt="Image" />
-      <b><p>Book a Hotel</p></b>
+      <b><p>Reserve Stays</p></b>
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
 
       <div className="book-guide service_card">
       <img src={Guide} alt="Image" />
-      <b><p>Book a tour guide</p></b>
+      <b><p>Find a Tour Guide</p></b>
+      <p>We are extremely easy for you to approach and contact.</p>
+      </div>
+
+      <div className="Insurance service_card">
+      <img src={Insurance} alt="Image" />
+      <b><p>Travel Insurance</p></b>
+      <p>We are extremely easy for you to approach and contact.</p>
+      </div>
+
+      <div className="Visa service_card">
+      <img src={Passport} alt="Image" />
+      <b><p>Apply Visa</p></b>
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
     </div>
