@@ -240,6 +240,16 @@ h2.list-heading {
     font-weight: 600;
 }
 
+.service_card img {
+    width: 64px;
+}
+.Service_block .row {
+    justify-content: center;
+}
+.Insurance.service_card, .Visa {
+    margin-top: 30px;
+}
+
 
 
 
