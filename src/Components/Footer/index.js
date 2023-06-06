@@ -42,10 +42,10 @@ const Footer = () => {
             <ul>
             <li onClick={()=>{navigate("/")}}>Home</li>
              <li onClick={()=>{navigate("/about")}}>About</li>
-             <li onClick={()=>{navigate("/eror")}}>Blog</li>
+             <li onClick={()=>{navigate("/error")}}>Blog</li>
              <li onClick={()=>{navigate("/tour")}}>Tour Guide</li>
-             <li onClick={()=>{navigate("/eror")}}>Contact</li>
-             <li onClick={()=>{navigate("/eror")}}>Privacy</li>
+             <li onClick={()=>{navigate("/error")}}>Contact</li>
+             <li onClick={()=>{navigate("/error")}}>Privacy</li>
              
             </ul>
             </div>
