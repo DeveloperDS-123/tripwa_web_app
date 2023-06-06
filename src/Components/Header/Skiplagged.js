@@ -1,10 +1,5 @@
-import Search from "./SearchBar/index";
 import ".//Banner.css";
 import ".//Stylesheet.css";
-import Plane from "../../Images/plane 1.png";
-import Car from "../../Images/car.png";
-import Hotel from "../../Images/hotel.png";
-import Guide from "../../Images/guide.png";
 
 const Skiplagged = () => {
   return (

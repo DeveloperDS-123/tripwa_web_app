@@ -11,9 +11,8 @@ const AppRoutes = () => {
       <HeaderNavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/flights" element={<Flights />} />
-        <Route path="/stays" element={<Stays />} />
-        <Route path="/cars" element={<Cars />} />
+        <Route path="/about-us" element={<Flights />} />
+        <Route path="/things-to-do" element={<Stays />} />
         <Route path="/visit" element={<Flights />} />
         <Route path="/plan-my-trip" element={<Flights />} />
         <Route path="/package-details" element={<Flights />} />

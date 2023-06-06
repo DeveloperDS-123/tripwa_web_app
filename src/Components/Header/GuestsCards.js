@@ -1,5 +1,4 @@
 import Travel from "../../Images/London.png";
-import Headphone from "../../Images/headphone.svg";
 
 const GuestsCards = () => {
   return (

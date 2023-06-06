@@ -1,5 +1,4 @@
 import ".//Stylesheet.css";
-import DiscoveryCards from "./DiscoveryCards";
 import ExploreCard from "./ExploreCard";
 
 const Explore = () => {

@@ -1,5 +1,3 @@
-import { useNavigate } from "react-router-dom";
-import Header from "./Header/HeaderNavBar";
 import Background from "./Header/Background";
 import Service from "./Header/Service";
 import Discovery from "./Header/Discovery";

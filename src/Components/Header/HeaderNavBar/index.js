@@ -1,18 +1,20 @@
 import { Link, useNavigate } from "react-router-dom";
 import "../Styles/Header.css";
 import Logo from "../../../Images/Tripwa.svg";
+import { useState } from "react";
 
 const HeaderNavBar = () => {
   const navigate = useNavigate();
+ 
   const navItems = [
     {
       id: 1,
-      name: "Flights",
-      onclick: () => navigate("/flights"),
+      name: "Home",
+      onclick: () => navigate("/"),
     },
-    { id: 2, name: "Stays", onclick: () => navigate("/stays") },
-    { id: 3, name: "Cars", onclick: () => navigate("/cars") },
-    { id: 4, name: "Visit", onclick: () => navigate("/visit") },
+    { id: 2, name: "About Us", onclick: () => navigate("/about-us") },
+    { id: 3, name: "Things to Do", onclick: () => navigate("/things-to-do") },
+    { id: 4, name: "Places to Visit", onclick: () => navigate("/visit") },
     {
       id: 5,
       name: "Plan my Trip",
@@ -24,6 +26,7 @@ const HeaderNavBar = () => {
       onclick: () => navigate("/package-details"),
     },
   ];
+  
   return (
     <div className="Header">
       <div className=" container">
