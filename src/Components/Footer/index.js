@@ -6,9 +6,13 @@ import Phone from "../../Images/Phone.svg";
 import Email from "../../Images/Email.svg";
 import Location from "../../Images/Office.svg";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 const Footer = () => {
   const navigate = useNavigate();
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className="Footer">
       <div className="container">

@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Components/Home";
 import Footer from "./Components/Footer";
 import Error from "./pages/Error";
@@ -9,10 +9,17 @@ import ThingsToDo from "./pages/thingsToDo";
 import PlaceToVisit from "./pages/placeToVisit";
 import PlanMyTrip from "./pages/planMyTrip";
 import PackageDetails from "./pages/packageDetails";
+import Login from "./pages/login";
+import { useEffect } from "react";
 
 const AppRoutes = () => {
+  const location = useLocation();
+  console.log(location.pathname);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <BrowserRouter>
+    <>
       <HeaderNavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -25,7 +32,7 @@ const AppRoutes = () => {
         <Route path="/tour-guide" element={<TourGuide />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 };
 
