@@ -34,9 +34,9 @@ function Home() {
   return (
     <div>
       <Header backgroundImage={""} navigationData={navItems} />
-      <Service />        
-      <Background/>      
-      <Discovery />
+       <Background/>         
+        <Service />  
+        <Discovery />
       {/* <Guests /> */}
       <Explore />
       {/* <Skiplagged /> */}
