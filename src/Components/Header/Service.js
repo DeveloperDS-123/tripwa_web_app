@@ -8,7 +8,7 @@ import Guide from "../../Images/guide.png";
 import Passport from "../../Images/passport.png"
 import Insurance from "../../Images/travel-insurance.png"
 import { useNavigate } from "react-router-dom";
-import { useState } from "react";
+
 
 const Service = () => {
   const navigate = useNavigate();

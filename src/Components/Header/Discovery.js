@@ -1,7 +1,13 @@
 import './/Stylesheet.css';
 import DiscoveryCards from './DiscoveryCards'
+import { useNavigate } from "react-router-dom";
 
 const Discovery = () => {
+  const navigate = useNavigate();
+  const navigateToBookNow = () => {
+    
+    navigate('/Booknow');
+  };
   return (
     <div
       className="Discovery_card"
@@ -26,7 +32,7 @@ const Discovery = () => {
     
     </div>
     <div className='row'>
-    <button className='book_now'>Book Now</button>
+    <button className='book_now' onClick={navigateToBookNow} >Book Now</button>
     </div>
     </div>
     </div>

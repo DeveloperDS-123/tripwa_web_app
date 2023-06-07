@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
@@ -10,6 +10,7 @@ import PlanMyTrip from "./Components/Header/PlanMyTrip"
 import PackageDetails from "./Components/Header/PackageDetails"
 import TourGuide from "./Components/Header/TourGuide"
 import HeaderNavBar from "./Components/Header/HeaderNavBar";
+import Booknow from "./Components/Header/Booknow"
 
 
 const AppRoutes = () => {
@@ -28,6 +29,7 @@ const AppRoutes = () => {
       <Route path="/plan-my-trip" element={<PlanMyTrip />} />
       <Route path="/package-details" element={<PackageDetails />} />
       <Route path="/tour-guide" element={<TourGuide />} />
+      <Route path="/Book Now" element={<Booknow />} />
       {/* <Route path="/Flights" element={<flights/>} /> */}
       {/* <Route path="/Rent a Car" element={<car/>} /> */}
     </Routes>

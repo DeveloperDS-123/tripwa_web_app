@@ -1,8 +1,14 @@
 import './/Stylesheet.css';
 import DiscoveryCards from './DiscoveryCards'
 import ExploreCard from './ExploreCard';
+import { useNavigate } from "react-router-dom";
 
 const Explore = () => {
+  const navigate = useNavigate();
+  const navigateToBookNow = () => {
+    
+    navigate('/Booknow');
+  };
   let arr=[
     {image: 'user'},
     {image: 'user'},
@@ -38,7 +44,7 @@ const Explore = () => {
     </div>
     </div>
     <div className='row' style={{marginTop:'30px'}}>
-    <button className='book_now'>Book Now</button>
+    <button className='book_now'onClick={navigateToBookNow}>Book Now</button>
     </div>
     </div>
   );
