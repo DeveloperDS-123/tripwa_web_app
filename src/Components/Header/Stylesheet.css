@@ -4,7 +4,20 @@
     align-items: center;
 }
 .Discovery_card.Explore {
-    background-color: #F8C000;
+    background-color: #ff4040bf;
+   
+}
+button.book_now {
+    margin: auto;
+    border-radius: 100px;
+    border: none;
+    height: 40px;
+    min-width: 114px;
+    margin: auto;
+    text-align: center;
+    font-weight: 500;
+    background-color: #438eff;
+    color: white;
 }
 #e {
     color: black;
@@ -14,8 +27,8 @@
     height: 100%;
     justify-content: center;
 }
-.Service_block{
-    background-color:  #E7E7E787;
+.Service_block {
+    background-color: #f8c000ab;
     padding-top: 100px;
     padding-bottom: 80px;
 }
@@ -38,8 +51,8 @@
 
 .service_card {
     text-align: center;
-    width: 25%;
-}   
+    width: 15%;
+}  
 .service_card p {
     font-size: 16px;
     cursor: pointer;
@@ -253,10 +266,14 @@ h2.list-heading {
 .Service_block .row {
     justify-content: center;
 }
-.Insurance.service_card {
-    margin-top: 30px;
-}
 
+.Header.fixed {
+    top: 0px;
+    z-index: 99999 !important;
+    position: fixed;
+    width: 100%;
+    background-color: #277dffde;
+}
 /* Guest Section */
 
 .Guests_Cards .row {

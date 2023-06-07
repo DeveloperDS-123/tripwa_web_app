@@ -27,6 +27,7 @@ const Explore = () => {
        <p>Explore More +</p>
       </div>
     </div>
+    
     <div className="row">
 {arr.map((item)=>{
   return <ExploreCard data={item} />
@@ -35,6 +36,9 @@ const Explore = () => {
       
     
     </div>
+    </div>
+    <div className='row' style={{marginTop:'30px'}}>
+    <button className='book_now'>Book Now</button>
     </div>
     </div>
   );

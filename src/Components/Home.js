@@ -35,6 +35,7 @@ function Home() {
     <div>
       <Header backgroundImage={""} navigationData={navItems} />
        <Background/>         
+       <About/>
         <Service />  
         <Discovery />
       {/* <Guests /> */}

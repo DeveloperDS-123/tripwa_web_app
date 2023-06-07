@@ -44,9 +44,9 @@ const HeaderNavBar = () => {
     setSticky(stickyClass);
   };
   return (
-    <div className="Header">
+    <div className={`Header ${sticky}`}>
       <div className=" container">
-        <div className={sticky === "fixed" ? "header-fixed" : "row"}>
+        <div className="row">
           <Link to={{ pathname: `/` }}>
             <div>
               <img id="logo" src={Logo} alt="Tripwa" />

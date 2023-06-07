@@ -25,7 +25,9 @@ const Discovery = () => {
        <DiscoveryCards />
     
     </div>
-    <div style={{color: "#277dff", textAlign:"center" }}><h3>Book Now</h3></div>
+    <div className='row'>
+    <button className='book_now'>Book Now</button>
+    </div>
     </div>
     </div>
   );
