@@ -63,7 +63,13 @@ const HeaderNavBar = () => {
             })}
           </div>
           <div className="button_group">
-            <p>Login</p>
+            <p
+              onClick={() => {
+                navigate("/login");
+              }}
+            >
+              Login
+            </p>
           </div>
         </div>
       </div>
