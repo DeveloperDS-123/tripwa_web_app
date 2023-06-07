@@ -10,7 +10,7 @@ const Discovery = () => {
     <div className='row section_header'>
       <div className='section_title'>
         <h2 className='section_title'>Events and Festivals</h2>
-        <p className='section_dis'>Popular places to recommends for you</p>
+        <p className='section_dis' >Popular places to recommends for you</p>
       </div>
       {/* <div className='section_target'>
        <p>Explore More +</p>
@@ -25,6 +25,7 @@ const Discovery = () => {
        <DiscoveryCards />
     
     </div>
+    <div style={{color: "#277dff", textAlign:"center" }}><h3>Book Now</h3></div>
     </div>
     </div>
   );

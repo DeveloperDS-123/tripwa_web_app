@@ -21,7 +21,7 @@ const Explore = () => {
     <div className='row section_header'>
       <div className='section_title'>
         <h2 className='section_title'>Explore & Discover</h2>
-        <p className='section_dis'>Popular places to recommends for you</p>
+        <p className='section_dis' id='e'>Popular places to recommends for you</p>
       </div>
       <div className='section_target'>
        <p>Explore More +</p>
