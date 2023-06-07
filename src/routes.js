@@ -28,6 +28,8 @@ const AppRoutes = () => {
       <Route path="/plan-my-trip" element={<PlanMyTrip />} />
       <Route path="/package-details" element={<PackageDetails />} />
       <Route path="/tour-guide" element={<TourGuide />} />
+      <Route path="/Flights" element={<flights/>} />
+      {/* <Route path="/Rent a Car" element={<car/>} /> */}
     </Routes>
     <Footer />
 </>

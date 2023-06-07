@@ -12,6 +12,14 @@ import { useState } from "react";
 
 const Service = () => {
   const navigate = useNavigate();
+  const navigateToFlights = () => {
+    // 👇️ navigate to /contacts
+    navigate('/Flights');
+  };
+  const navigateToCar = () => {
+    // 👇️ navigate to /contacts
+    navigate('/car');
+  };
   return (
     
     <div
@@ -21,7 +29,7 @@ const Service = () => {
     <div className="container">
     
      <div className="row" >
-     <div className="book-flight service_card">
+     <div className="book-flight service_card" onClick={navigateToFlights} >
       <img src={Plane} alt="Image" />
       <b><p onClick={navigate("/ThingsToDo")}>Book a flight</p></b>
   
