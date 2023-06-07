@@ -9,11 +9,14 @@ import PlaceToVisit from "./Components/Header/PlaceToVisit"
 import PlanMyTrip from "./Components/Header/PlanMyTrip"
 import PackageDetails from "./Components/Header/PackageDetails"
 import TourGuide from "./Components/Header/TourGuide"
+import HeaderNavBar from "./Components/Header/HeaderNavBar";
 
 
 const AppRoutes = () => {
 
-  return <BrowserRouter>
+  return (
+  <>
+  <HeaderNavBar/>
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />
@@ -27,8 +30,8 @@ const AppRoutes = () => {
       <Route path="/tour-guide" element={<TourGuide />} />
     </Routes>
     <Footer />
-
-  </BrowserRouter>;
+</>
+  )
 };
 
 export default AppRoutes;

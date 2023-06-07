@@ -24,6 +24,7 @@ const Service = () => {
      <div className="book-flight service_card">
       <img src={Plane} alt="Image" />
       <b><p onClick={navigate("/ThingsToDo")}>Book a flight</p></b>
+
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
 
