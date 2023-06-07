@@ -9,20 +9,12 @@ import ThingsToDo from "./pages/thingsToDo";
 import PlaceToVisit from "./pages/placeToVisit";
 import PlanMyTrip from "./pages/planMyTrip";
 import PackageDetails from "./pages/packageDetails";
-import Login from "./pages/login";
-import { useEffect } from "react";
 
 const AppRoutes = () => {
   const location = useLocation();
   console.log(location.pathname);
   return (
     <>
-      <Routes>
-        <Route path="/login" element={<Login />} />
-      </Routes>
-
-      {location.pathname !== "/login" && (
-        <>
           <HeaderNavBar />
           <Routes>
             <Route path="/" element={<Home />} />
@@ -35,8 +27,7 @@ const AppRoutes = () => {
             <Route path="/tour-guide" element={<TourGuide />} />
           </Routes>
           <Footer />
-        </>
-      )}
+        
     </>
   );
 };
