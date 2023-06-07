@@ -10,14 +10,26 @@
 button.book_now {
     margin: auto;
     border-radius: 100px;
-    border: none;
     height: 40px;
     min-width: 114px;
     margin: auto;
     text-align: center;
     font-weight: 500;
-    background-color: #438eff;
+    cursor: pointer;
+    background-color: transparent;
     color: white;
+    border: 2px solid white;
+}
+span.showme {
+    color: #f6cb32;
+    font-weight: 600;
+}
+.Discovery_card.Explore .row.section_header, .Discovery_card.Explore .row.section_header p#e {
+    color: white;
+}
+.main_efort button.book_now {
+    color: #2b7fff;
+    border: 2px solid #2b7fff;
 }
 #e {
     color: black;
@@ -28,11 +40,14 @@ button.book_now {
     justify-content: center;
 }
 .Service_block {
-    background-color: #f8c000ab;
+    background-color: #ededed;
     padding-top: 100px;
     padding-bottom: 80px;
 }
-
+.about_winner p {
+    color: #9C9C9C;
+    font-size: 16px;
+}
 .second-section{
     display: flex;
     text-align: center;
@@ -399,7 +414,9 @@ p.location-txt {
 p.order, .main_name, p.location-txt, p.location-icon, p.stay-txt {
     font-size: 14px;
 }
-
+.text_block, image_second {
+    width: 50%;
+}
 #mobileview {
         display: none;
     }
