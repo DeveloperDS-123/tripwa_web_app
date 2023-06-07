@@ -15,19 +15,18 @@ const AppRoutes = () => {
   console.log(location.pathname);
   return (
     <>
-          <HeaderNavBar />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about-us" element={<AboutUs />} />
-            <Route path="/error" element={<Error />} />
-            <Route path="/things-to-do" element={<ThingsToDo />} />
-            <Route path="/places-to-visit" element={<PlaceToVisit />} />
-            <Route path="/plan-my-trip" element={<PlanMyTrip />} />
-            <Route path="/package-details" element={<PackageDetails />} />
-            <Route path="/tour-guide" element={<TourGuide />} />
-          </Routes>
-          <Footer />
-        
+      <HeaderNavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/error" element={<Error />} />
+        <Route path="/things-to-do" element={<ThingsToDo />} />
+        <Route path="/places-to-visit" element={<PlaceToVisit />} />
+        <Route path="/plan-my-trip" element={<PlanMyTrip />} />
+        <Route path="/package-details" element={<PackageDetails />} />
+        <Route path="/tour-guide" element={<TourGuide />} />
+      </Routes>
+      <Footer />
     </>
   );
 };
