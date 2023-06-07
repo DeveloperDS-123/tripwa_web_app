@@ -13,12 +13,23 @@ import { useState } from "react";
 const Service = () => {
   const navigate = useNavigate();
   const navigateToFlights = () => {
-    // 👇️ navigate to /contacts
-    navigate('/Flights');
+    
+    navigate('/flights');
   };
   const navigateToCar = () => {
-    // 👇️ navigate to /contacts
     navigate('/car');
+  };
+  const navigateToStays = () => {
+    navigate('/stays');
+  };
+  const navigateToGuide = () => {
+    navigate('/guide');
+  };
+  const navigateToInsurance = () => {
+    navigate('/travel_insurance');
+  };
+  const navigateToVisa = () => {
+    navigate('/travel_visa');
   };
   return (
     
@@ -36,31 +47,31 @@ const Service = () => {
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
 
-      <div className="book-car service_card">
+      <div className="book-car service_card" onClick={navigateToCar}>
       <img src={Car} alt="Image" />
       <b><p >Rent a Car</p></b>
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
 
-      <div className="book-hotel service_card">
+      <div className="book-hotel service_card" onClick={navigateToStays}>
       <img src={Hotel} alt="Image" />
       <b><p >Reserve Stays</p></b>
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
 
-      <div className="book-guide service_card">
+      <div className="book-guide service_card" onClick={navigateToGuide}>
       <img src={Guide} alt="Image" />
       <b><p>Find a Tour Guide</p></b>
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
 
-      <div className="Insurance service_card">
+      <div className="Insurance service_card" onClick={navigateToInsurance}>
       <img src={Insurance} alt="Image" />
       <b><p>Travel Insurance</p></b>
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
 
-      <div className="Visa service_card">
+      <div className="Visa service_card" onClick={navigateToVisa}>
       <img src={Passport} alt="Image" />
       <b><p>Apply Visa</p></b>
       <p>We are extremely easy for you to approach and contact.</p>
