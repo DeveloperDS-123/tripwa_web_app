@@ -7,8 +7,11 @@ import Hotel from "../../Images/hotel.png";
 import Guide from "../../Images/guide.png";
 import Passport from "../../Images/passport.png"
 import Insurance from "../../Images/travel-insurance.png"
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 
 const Service = () => {
+  const navigate = useNavigate();
   return (
     
     <div
@@ -20,7 +23,7 @@ const Service = () => {
      <div className="row" >
      <div className="book-flight service_card">
       <img src={Plane} alt="Image" />
-      <b><p>Book a flight</p></b>
+      <b><p onClick={navigate("/ThingsToDo")}>Book a flight</p></b>
       <p>We are extremely easy for you to approach and contact.</p>
       </div>
 
