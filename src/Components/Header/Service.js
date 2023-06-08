@@ -16,7 +16,7 @@ const Service = () => {
     <div className="container">
     
      <div className="row">
-     <div className="book-flight service_card">
+     <div className="book-flight service_card" >
       <img src={Plane} alt="Image" />
       <b><p>Book a flight</p></b>
       <p>We are extremely easy for you to approach and contact.</p>

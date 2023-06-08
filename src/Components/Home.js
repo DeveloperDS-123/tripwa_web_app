@@ -11,9 +11,9 @@ function Home() {
       <Background/>
       <Service />
       <Discovery />
-      <Guests />
+      {/* <Guests /> */}
       <Explore />
-      <Skiplagged />
+      {/* <Skiplagged /> */}
     </div>
   );
 }
