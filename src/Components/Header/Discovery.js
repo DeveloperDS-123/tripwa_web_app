@@ -10,7 +10,7 @@ const Discovery = () => {
   };
   return (
     <div
-      className="Discovery_card main_efort"
+      className="Discovery_card"
     >
     <div className="container">
     <div className='row section_header'>
