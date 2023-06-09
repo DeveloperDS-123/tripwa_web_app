@@ -16,10 +16,10 @@ p{
 }
 .Header {
     color: white;
- 
     position: absolute;
     width: 100%;
     top: 0px;
+    z-index: 1;
 }
 .Header .row{
     justify-content: space-around;
