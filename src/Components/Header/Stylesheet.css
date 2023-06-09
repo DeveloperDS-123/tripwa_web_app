@@ -775,3 +775,86 @@ p.order, .main_name, p.location-txt, p.location-icon, p.stay-txt {
     }
     
 }
+<<<<<<< Updated upstream
+=======
+<<<<<<< HEAD
+/* Hide the video controls by default */
+video::-webkit-media-controls {
+    display: none !important;
+  }
+  
+  /* Show the video controls on hover */
+  video:hover::-webkit-media-controls {
+    display: initial !important;
+  } 
+
+  video{
+    width: 100%;
+    height: auto;
+  }
+  .slick-slide img {
+    display: block;
+    height: 50vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 600px) {
+.text_block, .image_second {
+    width: 100%;
+}
+.image_second  img {
+    width: 100%;
+}
+.row {
+    padding-left: 0;
+}
+.service_card {
+    width: 30%;
+    margin: auto;
+}
+.Service_block .row {
+    gap: 30px;
+}
+.ExploreCards {
+    border-radius: 9px;
+}
+.Discovery_card .row {
+    justify-content: center;
+    gap: 10px;
+}
+.slick-slide img {
+    height: 30vh;
+}
+.Discovery_card, .Guests_Cards, .Skiplagged, .Footer {
+    padding: 30px 20px;
+}
+}
+.slick-initialized .slick-slide {
+    overflow: hidden;
+}
+.slider{
+    -webkit-transition: opacity 2000s ease-in-out;
+      -moz-transition: opacity 2000s ease-in-out;
+      -ms-transition: opacity 2000s ease-in-out;
+      -o-transition: opacity 2000s ease-in-out;
+       opacity: 1;
+  }
+  .background-image-div img {
+    animation: zoom-in-zoom-out 15s ease infinite;
+  }
+  
+  @keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1.2 , 1.2);
+    }
+    50% {
+      transform: scale(1.5, 1.5);
+    }
+    100% {
+      transform: scale(1.2, 1.2);
+    }
+  }
+=======
+>>>>>>> 1bb44db7cde75c7c5ac23ae34b7ff6a6c43d0b0d
+>>>>>>> Stashed changes
