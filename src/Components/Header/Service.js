@@ -23,7 +23,7 @@ const Service = () => {
     navigate('/stays');
   };
   const navigateToGuide = () => {
-    navigate('/guide');
+    navigate('/tour');
   };
   const navigateToInsurance = () => {
     navigate('/travel_insurance');
