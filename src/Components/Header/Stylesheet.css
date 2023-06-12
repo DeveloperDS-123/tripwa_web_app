@@ -44,7 +44,8 @@ span.showme {
 }
 .about_winner p {
     color: #9C9C9C;
-    font-size: 16px;
+    font-size: 14px;
+    margin: 5px 0px;
 }
 .second-section{
     display: flex;
@@ -407,7 +408,7 @@ p.order, .main_name, p.location-txt, p.location-icon, p.stay-txt {
     font-size: 14px;
 }
 .text_block, image_second {
-    width: 68%;
+    width: 100%;
 }
 .image_second {
     width: 30%;
