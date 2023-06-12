@@ -14,7 +14,7 @@ import Booknow from "./Components/Header/Booknow"
 
 
 const AppRoutes = () => {
-const location=useLocation();
+const location = useLocation();
   return (
   <>
   {location.pathname !== "/"&&<HeaderNavBar/>}
