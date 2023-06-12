@@ -33,14 +33,16 @@ function Home() {
   ];
   return (
     <div>
-      <Header backgroundImage={""} navigationData={navItems} />
-       <Background/>         
+      
+       <Background/>
+       <Header backgroundImage={""} navigationData={navItems} id={'ss'}/>         
        <About/>
         <Service />  
-        <Discovery />
+      
       {/* <Guests /> */}
       <Explore />
       {/* <Skiplagged /> */}
+      <Discovery />
  
     </div>
   );

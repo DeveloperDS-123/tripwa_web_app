@@ -20,9 +20,7 @@ const Explore = () => {
     { image: 'user' },
   ]
   return (
-    <div
-      className="Discovery_card Explore"
-    >
+    <div className="Discovery_card Explore">
       <div className="container">
         <div className='row section_header'>
           <div className='section_title'>

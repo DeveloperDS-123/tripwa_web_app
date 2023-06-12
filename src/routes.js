@@ -1,4 +1,4 @@
-import {  Route, Routes } from "react-router-dom";
+import {  Route, Routes, useLocation } from "react-router-dom";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Footer from "./Components/Footer";
@@ -14,10 +14,10 @@ import Booknow from "./Components/Header/Booknow"
 
 
 const AppRoutes = () => {
-
+const location=useLocation();
   return (
   <>
-  <HeaderNavBar/>
+  {location.pathname !== "/"&&<HeaderNavBar/>}
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="about" element={<About />} />

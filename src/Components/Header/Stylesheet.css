@@ -3,10 +3,7 @@
     display: flex;
     align-items: center;
 }
-.Discovery_card.Explore {
-    background-color: #ff4040bf;
-   
-}
+
 button.book_now {
     margin: auto;
     border-radius: 100px;
@@ -17,16 +14,17 @@ button.book_now {
     font-weight: 500;
     cursor: pointer;
     background-color: transparent;
-    color: white;
-    border: 2px solid white;
+    color: #277dff;
+    border: 2px solid #277dff;
 }
 span.showme {
     color: #f6cb32;
     font-weight: 600;
 }
-.Discovery_card.Explore .row.section_header, .Discovery_card.Explore .row.section_header p#e {
+/* .Discovery_card.Explore .row.section_header, .Discovery_card.Explore .row.section_header p#e {
     color: white;
-}
+} */
+
 .main_efort button.book_now {
     color: #2b7fff;
     border: 2px solid #2b7fff;
@@ -279,16 +277,10 @@ h2.list-heading {
     width: 64px;
 }
 .Service_block .row {
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.Header.fixed {
-    top: 0px;
-    z-index: 99999 !important;
-    position: fixed;
-    width: 100%;
-    background-color: #277dffde;
-}
+
 /* Guest Section */
 
 .Guests_Cards .row {
@@ -415,7 +407,13 @@ p.order, .main_name, p.location-txt, p.location-icon, p.stay-txt {
     font-size: 14px;
 }
 .text_block, image_second {
-    width: 50%;
+    width: 68%;
+}
+.image_second {
+    width: 30%;
+}
+.image_second img {
+    width: 100%;
 }
 #mobileview {
         display: none;
@@ -812,7 +810,19 @@ video::-webkit-media-controls {
     width: 100%;
     object-fit: cover;
 }
-
+.Discovery_card.main_efort {
+    background-color: #FF7070;
+}
+.Discovery_card.main_efort .section_title p, .Discovery_card.main_efort .section_title h2 {
+    color: white;
+}
+.Discovery_card.main_efort p.order_num, .Discovery_card.main_efort p.city_name {
+    color: #FFFFFF;
+}
+.Discovery_card.main_efort button.book_now {
+    color: white;
+    border: 2px solid white;
+}
 @media screen and (max-width: 600px) {
 .text_block, .image_second {
     width: 100%;

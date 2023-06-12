@@ -40,7 +40,7 @@ const HeaderNavBar = () => {
 
   const isSticky = () => {
     const scrollTop = window.scrollY;
-    const stickyClass = scrollTop >= 80 ? "fixed" : "";
+    const stickyClass = scrollTop >= 420 ? "fixed" : "";
     setSticky(stickyClass);
   };
   return (
