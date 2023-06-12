@@ -48,7 +48,7 @@ const HeaderNavBar = () => {
       <div className=" container">
         <div className="row">
           <Link to={{ pathname: `/` }}>
-            <div>
+            <div className="logo_wrap">
               <img id="logo" src={Logo} alt="Tripwa" />
             </div>
           </Link>
