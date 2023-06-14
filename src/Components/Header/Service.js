@@ -33,16 +33,14 @@ const Service = () => {
   };
   return (
     
-    <div
-      className="Service_block"
-    >
+    <div className="Service_block">
     
     <div className="container">
     
      <div className="row" >
      <div className="book-flight service_card" onClick={navigateToFlights} >
       <img src={Plane} alt="Image" />
-      <b><p onClick={navigate("/ThingsToDo")}>Book a flight</p></b>
+      <b><p>Book a flight</p></b>
   
       </div>
 

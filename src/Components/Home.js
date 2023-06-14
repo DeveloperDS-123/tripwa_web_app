@@ -12,24 +12,24 @@ import About from "./About";
 function Home() {
   const navigate = useNavigate();
   const navItems = [
-    {
-      id: 1,
-      name: "Home",
-      onclick: () => navigate("/home"),
-    },
-    { id: 2, name: "About Us", onclick: () => navigate("/About_Us") },
-    { id: 3, name: "Things to Do", onclick: () => navigate("/Things to Dos") },
-    { id: 4, name: "Places to Visit", onclick: () => navigate("/visit") },
-    {
-      id: 5,
-      name: "Plan my Trip",
-      onclick: () => navigate("/plan-my-trip"),
-    },
-    {
-      id: 6,
-      name: "Packaged Details",
-      onclick: () => navigate("/package-details"),
-    },
+    // {
+    //   id: 1,
+    //   name: "Home",
+    //   onclick: () => navigate("/home"),
+    // },
+    // { id: 2, name: "About Us", onclick: () => navigate("/About_Us") },
+    // // { id: 3, name: "Things to Do", onclick: () => navigate("/Things to Dos") },
+    // { id: 4, name: "Places to Visit", onclick: () => navigate("/visit") },
+    // {
+    //   id: 5,
+    //   name: "Plan my Trip",
+    //   onclick: () => navigate("/plan-my-trip"),
+    // },
+    // {
+    //   id: 6,
+    //   name: "Packaged Details",
+    //   onclick: () => navigate("/package-details"),
+    // },
   ];
   return (
     <div>

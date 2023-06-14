@@ -11,7 +11,7 @@ const HeaderNavBar = () => {
       name: "Home",
       onclick: () => navigate("/"),
     },
-    { id: 2, name: "About Us", onclick: () => navigate("/about-us") },
+    { id: 2, name: "About Us", onclick: () => navigate("/About-us") },
     { id: 3, name: "Things to Do", onclick: () => navigate("/things-to-do") },
     {
       id: 4,
@@ -31,8 +31,7 @@ const HeaderNavBar = () => {
   ];
   const [sticky, setSticky] = useState("");
 
-  useEffect(() => {
-    window.addEventListener("scroll", isSticky);
+  useEffect(() => {window.addEventListener("scroll", isSticky);
     return () => {
       window.removeEventListener("scroll", isSticky);
     };
@@ -63,13 +62,7 @@ const HeaderNavBar = () => {
             })}
           </div>
           <div className="button_group">
-            <p
-              onClick={() => {
-                navigate("/login");
-              }}
-            >
-              Login
-            </p>
+            <p onClick={() => { navigate("/login"); }}>Login</p>
           </div>
         </div>
       </div>

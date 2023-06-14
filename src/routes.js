@@ -11,7 +11,7 @@ import PackageDetails from "./Components/Header/PackageDetails"
 import TourGuide from "./Components/Header/TourGuide"
 import HeaderNavBar from "./Components/Header/HeaderNavBar";
 import Booknow from "./Components/Header/Booknow"
-
+import About_us from "./Components/Header/About_us"
 
 const AppRoutes = () => {
 const location = useLocation();
@@ -20,11 +20,11 @@ const location = useLocation();
   {location.pathname !== "/"&&<HeaderNavBar/>}
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="/eror" element={<Eror />} />
-      <Route path="/eror" element={<Eror />} />
-      <Route path="/tour" element={<Tour />} />
-      <Route path="/things-to-do" element={<ThingsToDo />} />
+      <Route path="/about-us" element={<About_us/>} />
+      <Route path="/eror" element={<Eror/>} />
+      <Route path="/eror" element={<Eror/>} />
+      <Route path="/tour" element={<Tour/>} />
+      {/* <Route path="/things-to-do" element={<ThingsToDo />} /> */}
       <Route path="/places-to-visit" element={<PlaceToVisit />} />
       <Route path="/plan-my-trip" element={<PlanMyTrip />} />
       <Route path="/package-details" element={<PackageDetails />} />
